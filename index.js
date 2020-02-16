@@ -11,7 +11,7 @@ CLASSES = {
 
 // Maybe this will fix the 404 error on github pages
 const MODEL_PATH =
-    'https://anjalipdoshi.github.io/model.json';    
+    document.URL + "model.json";    
 
 const IMAGE_SIZE = 192;
 const TOPK_PREDICTIONS = 5;
