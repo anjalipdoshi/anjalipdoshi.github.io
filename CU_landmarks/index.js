@@ -35,7 +35,7 @@ const demo = async () => {
   //For landmarks model, need to predict a landmark.
   //Use image CULion_9 .jpg
   // const catElement = document.getElementById('cat');
-  const catElement = document.getElementById('CULion_9');
+  const catElement = document.getElementById('lion');
   if (catElement.complete && catElement.naturalHeight !== 0) {
     predict(catElement);
     catElement.style.display = '';
