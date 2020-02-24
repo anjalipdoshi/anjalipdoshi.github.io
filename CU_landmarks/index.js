@@ -31,8 +31,11 @@ const demo = async () => {
 
   status('');
 
-  // Make a prediction through the locally hosted cat.jpg.
-  const catElement = document.getElementById('cat');
+  // In flowers model, Make a prediction through the locally hosted cat.jpg.
+  //For landmarks model, need to predict a landmark.
+  //Use image CULion_9 .jpg
+  // const catElement = document.getElementById('cat');
+  const catElement = document.getElementById('CULion_9');
   if (catElement.complete && catElement.naturalHeight !== 0) {
     predict(catElement);
     catElement.style.display = '';
