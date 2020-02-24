@@ -6,8 +6,12 @@ CLASSES = {
   4: 'class4',
 };
 
+// const MODEL_PATH =
+//     'model.json';
+
+// Maybe this will fix the 404 error on github pages
 const MODEL_PATH =
-    'model.json';
+    document.URL + "model.json";    
 
 const IMAGE_SIZE = 192;
 const TOPK_PREDICTIONS = 5;
@@ -167,7 +171,7 @@ filesElement.addEventListener('change', evt => {
       img.src = e.target.result;
       img.width = IMAGE_SIZE;
       img.height = IMAGE_SIZE;
-      console.log("habibi, I love anjali, let's predict an image");
+      console.log("predicting an image");
       img.onload = () => predict(img);
     };
 

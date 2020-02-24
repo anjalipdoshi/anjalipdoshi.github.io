@@ -9,9 +9,9 @@ CLASSES = {
 };
 
 
-
+//added the 'document.URL part as per piazza suggestion'
 const MODEL_PATH =
-    'model.json';
+    document.URL + "model.json";
 
 const IMAGE_SIZE = 150;
 const TOPK_PREDICTIONS = 7;
